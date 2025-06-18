@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  bsc-tx-analyzer:
+    build: .
+    env_file:
+      - .env
+    container_name: bsc-tx-runner
