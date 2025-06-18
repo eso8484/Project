@@ -52,7 +52,7 @@ WALLET_ADDRESS=your_wallet_address
 BSCSCAN_API_KEY=your_bscscan_api_key
 TARGET_DATE=2025-06-01
 ```
-- Replace **your_wallet_address**, **your_bscscan_api_key** and **2025-06-01** with the your actuall `Binance wallet`, `BSCscan API key` obtained from [BscScan API Key](#Requirements) and finally the date of the transaction you want to count
+- Replace `your_wallet_address`, `your_bscscan_api_key` and `2025-06-01` with the your actuall `Binance wallet`, `BSCscan API key` obtained from [BscScan API Key](#Requirements) and finally the date of the transaction you want to count
 
 > ⚠️ Do **not** commit `.env` to version control. It should stay local and private.
 
