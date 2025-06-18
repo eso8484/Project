@@ -2,11 +2,15 @@ import requests
 from datetime import datetime, timedelta
 import csv
 import sys
+from dotenv import load_dotenv
+import os
 
-# === CONFIGURATION ===
-wallet_address = '0xbbc778464a4861b91f001e43773e17ebe546ade2'.lower()
-bscscan_api_key = 'NIZNDGFUUFR4EAYDSKTYRYXI8WIERGJN1I'
-target_date = '2025-06-01'  # Date for transactions
+load_dotenv()
+
+wallet_address = os.getenv("WALLET_ADDRESS").lower()
+bscscan_api_key = os.getenv("BSCSCAN_API_KEY")
+target_date = os.getenv("TARGET_DATE")  # format: YYYY-MM-DD
+
 
 # === Convert date to UNIX timestamps ===
 try:
